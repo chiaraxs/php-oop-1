@@ -61,11 +61,4 @@ class Movie
 
 
 
-// INSTANCE
-$newMovie1 = new Movie("Encanto", "Byron Howard", "Animation - For children - For family", "2021", "Walt Disney Pictures", "102");
-$newMovie2 = new Movie("The Book of Boba Fett", "Jon Favreau", "Action - Adventure - Drama", "2021", "Lucas Film", "1 Seasons- 7 Episodes");
-$newMovie3 = new Movie("Free Guy", "Shawn Levy", "Action - Adventure - Comedy", "2021", "20th Century Studios", "115");
-// / INSTANCE
-
-// var_dump($newMovie1, $newMovie2, $newMovie3);
 ?>
