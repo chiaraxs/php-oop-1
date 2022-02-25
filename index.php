@@ -63,8 +63,11 @@ include __DIR__ . "/db/data.php";
                     <!-- php -->
                     <?php
                     foreach ($movies as $movie) { ?>
+                        <div class="banner border">
+                            <img src="<?php echo ($movie->getPoster()) ?>" class="img-fluid rounded" alt="banner_film">
+                        </div>
                         <div class="card text-center lh-1 mb-3">
-                            <div class='text text-dark'>
+                            <div class='text text-light'>
                                 <h5 class='text-uppercase fw-bold fs-6 mt-3'> <?php echo ($movie->getTitle()) ?></h5>
                                 <p><span class="fw-bold">Genre:</span> <?php echo ($movie->getGenre()) ?></p>
                                 <p><span class="fw-bold">Film Director:</span> <?php echo ($movie->getFilmDirector()) ?></p>

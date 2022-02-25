@@ -11,10 +11,12 @@ class Movie
     public string $year;
     public string $productionCompany;
     public string $totalMinutes;
+    public string $poster;
+
     // / VARIABLES
 
     // CONSTRUCT
-    function __construct(string $_title, string $_filmDirector, string $_genre, string $_year, string $_productionCompany, string $_totalMinutes)
+    function __construct(string $_title, string $_filmDirector, string $_genre, string $_year, string $_productionCompany, string $_totalMinutes, string $_poster )
     {
         $this->title = $_title;
         $this->filmDirector = $_filmDirector;
@@ -22,6 +24,7 @@ class Movie
         $this->year = $_year;
         $this->productionCompany = $_productionCompany;
         $this->totalMinutes = $_totalMinutes;
+        $this->poster = $_poster;
     }
     // / CONSTRUCT
 
@@ -54,6 +57,11 @@ class Movie
     public function getTotalMinutes()
     {
         return $this->totalMinutes;
+    }
+
+    public function getPoster()
+    {
+        return $this->poster;
     }
     // / METHODS
 }

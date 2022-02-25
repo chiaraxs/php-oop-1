@@ -1,6 +1,6 @@
 /* HEADER */
 
-header, body {
+header, body, .card {
     background-color: #1a1d29;
 }
 
@@ -8,7 +8,4 @@ header, body {
    width: 180px;
 }
 
-/* MAIN */
-body{
-    color: white;
-}
+
