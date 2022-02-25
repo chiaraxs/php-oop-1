@@ -1,0 +1,14 @@
+/* HEADER */
+
+header, body {
+    background-color: #1a1d29;
+}
+
+.container-logo img {
+   width: 180px;
+}
+
+/* MAIN */
+body{
+    color: white;
+}
