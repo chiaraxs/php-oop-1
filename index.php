@@ -2,7 +2,6 @@
 
 include __DIR__ . "/class/movie.php";
 
-
 ?>
 
 
@@ -23,7 +22,89 @@ include __DIR__ . "/class/movie.php";
 
 <body>
 
+    <!-- MOVIE 1 -->
+
+    <h4>Title: <?php
+        echo ($newMovie1->getTitle()) ?>
+    </h4>
+
+    <p>Film Director: <?php
+        echo ($newMovie1->getFilmDirector()) ?>
+    </p>
+
+    <p>Genre: <?php
+        echo ($newMovie1->getGenre()) ?>
+    </p>
+
+    <p>Year: <?php
+        echo ($newMovie1->getYear()) ?>
+    </p>
+
+    <p>Production Company: <?php
+        echo ($newMovie1->getProductionCompany()) ?>
+    </p>
+
+    <p>Total Minutes: <?php
+        echo ($newMovie1->getTotalMinutes()) ?>
+    </p>
+    <!-- / MOVIE 1 -->
+
+    <!-- MOVIE 2 -->
+
+    <h4>Title: <?php
+        echo ($newMovie2->getTitle()) ?>
+    </h4>
+
+    <p>Film Director: <?php
+        echo ($newMovie2->getFilmDirector()) ?>
+    </p>
+
+    <p>Genre: <?php
+        echo ($newMovie2->getGenre()) ?>
+    </p>
+
+    <p>Year: <?php
+        echo ($newMovie2->getYear()) ?>
+    </p>
+
+    <p>Production Company: <?php
+        echo ($newMovie2->getProductionCompany()) ?>
+    </p>
+
+    <p>Total Minutes: <?php
+        echo ($newMovie2->getTotalMinutes()) ?>
+    </p>
+    <!-- / MOVIE 2 -->
+
+
+    <!-- MOVIE 3 -->
+
+    <h4>Title: <?php
+        echo ($newMovie3->getTitle()) ?>
+    </h4>
+
+    <p>Film Director: <?php
+        echo ($newMovie3->getFilmDirector()) ?>
+    </p>
+
+    <p>Genre: <?php
+        echo ($newMovie3->getGenre()) ?>
+    </p>
+
+    <p>Year: <?php
+        echo ($newMovie3->getYear()) ?>
+    </p>
+
+    <p>Production Company: <?php
+        echo ($newMovie3->getProductionCompany()) ?>
+    </p>
+
+    <p>Total Minutes: <?php
+        echo ($newMovie3->getTotalMinutes()) ?>
+    </p>
+    <!-- / MOVIE 3  -->
+
+
 </body>
 
 </html>
-
