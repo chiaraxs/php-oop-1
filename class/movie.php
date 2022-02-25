@@ -59,6 +59,4 @@ class Movie
 }
 // / CLASS
 
-
-
 ?>

@@ -56,28 +56,32 @@ include __DIR__ . "/db/data.php";
 
     <!-- MAIN -->
     <main class="container-fluid">
-        <div class="container">
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col">
 
-            <!-- php -->
-            <?php
-            foreach ($movies as $movie) { ?>
-                <div class="card text-center mb-3">
-                    <div class='text text-light'>
-                        <h5 class='text-uppercase fw-bold fs-6 mt-3'> <?php echo ($movie->getTitle()) ?></h5>
-                        <p class='text-secondary'> <?php echo ($movie->getFilmDirector()) ?><br>
-                            <?php echo ($movie->getYear()) ?></p>
-                    </div>
+                    <!-- php -->
+                    <?php
+                    foreach ($movies as $movie) { ?>
+                        <div class="card text-center lh-1 mb-3">
+                            <div class='text text-dark'>
+                                <h5 class='text-uppercase fw-bold fs-6 mt-3'> <?php echo ($movie->getTitle()) ?></h5>
+                                <p><span class="fw-bold">Genre:</span> <?php echo ($movie->getGenre()) ?></p>
+                                <p><span class="fw-bold">Film Director:</span> <?php echo ($movie->getFilmDirector()) ?></p>
+                                <p><span class="fw-bold">Year:</span> <?php echo ($movie->getYear()) ?></p>
+                                <p><span class="fw-bold">Production Company:</span> <?php echo ($movie->getProductionCompany()) ?></p>
+                                <p><span class="fw-bold">Minutes:</span> <?php echo ($movie->getTotalMinutes()) ?></p>
+                            </div>
+                        </div>
+                    <?php } ?>
+                    <!-- / php -->
                 </div>
-            <?php } ?>
-            <!-- / php -->
 
+            </div>
         </div>
     </main>
     <!-- / MAIN -->
 
-
-
-    
 
 </body>
 

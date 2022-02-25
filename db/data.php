@@ -1,6 +1,6 @@
 <?php
 
-include __DIR__ . "/class/movie.php";
+include __DIR__ . "/../class/movie.php";
 
 
 $movies = [
